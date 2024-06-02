@@ -51,7 +51,7 @@ Vous mettrez la clé dans la variable d'environnement OPENAI_API_KEY du fichier.
 
 Le dossier contient les fichiers suivants:
 - **scraping.py** : Ce fichier contient le code pour le web scraping des articles.
-- **embeddings.py** : Ce fichier contient le code pour le stockage des données en vecteur. Le dossier faiss_index2 sera créé et contiendra 2 fichiers : index.faiss et index.pkl qui respectivement contiennent les données en vecteur et les métadonnées.
+- **embeddings.py** : Ce fichier contient le code pour le stockage des données en vecteur. Le dossier **faiss_index2** sera créé et contiendra 2 fichiers : **index.faiss** et **index.pkl** qui respectivement contiennent les données en vecteur et les métadonnées.
 - **chatbot.py** : Ce fichier contient le code pour l'implémentation du RAG.
 - **extracted_data.json** : Ce fichier contient les données extraites des articles.
 - Le dossier faiss_index2 : Ce dossier contient les données en vecteur et leurs métadonnées.
@@ -75,6 +75,7 @@ Afin d'exécuter le code, vous avez 2 possibilités :
   ```
   python3 embeddings.py
   ```
+  Il est à noter dans la ligne 54 du code embeddings.py (upload_data) peut être commenté après la première exécution pour éviter de recharger les données à chaque fois.
 - Pour lancer le chatbot : 
   ```
   streamlit run chatbot.py
