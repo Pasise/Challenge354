@@ -39,6 +39,10 @@ Dans votre dossier, vous pouvez cloner le code en utilisant la commande suivante
 git clone https://github.com/Pasise/Challenge354
 
 ```
+Une fois le code téléchargé, vous pouvez accéder au dossier Challenge354/Rendu en utilisant la commande suivante :
+```bash
+cd Challenge354/Rendu
+```
 ## Fichier .env
 Pour utiliser le chatbot, vous devez créer un fichier .env dans lequel vous allez mettre votre clé API OpenAI. 
 Vous mettrez la clé dans la variable d'environnement OPENAI_API_KEY du fichier.env 
