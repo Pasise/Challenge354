@@ -95,7 +95,7 @@ Afin d'exécuter le code, vous avez 2 possibilités :
     - le contenu de l'article
     - la date de publication
     - la catégorie de l'article(Agro,Finance...)
-- Ensuite, elles sont stockées en vecteur dans un fichier faiss. Les métadonnées sont stockées dans un fichier pkl. Porcéder de cette manière offre une combinaison d'efficacité de stockage, de rapidité d'accès aux données et de facilité d'organisation, ce qui est bénéfique pour le processus RAG et les opérations associées de traitement de texte
+- Ensuite, elles sont stockées en vecteur dans un fichier faiss. Les métadonnées sont stockées dans un fichier pkl. Procéder de cette manière offre une combinaison d'efficacité de stockage, de rapidité d'accès aux données et de facilité d'organisation, ce qui est bénéfique pour le processus RAG et les opérations associées de traitement de texte
 
 # Comment fonctionne le chatbot ?
 Ce code implémente un chatbot pour le site Ecofin en utilisant des techniques de traitement du langage naturel . Voici un résumé des étapes clés :
