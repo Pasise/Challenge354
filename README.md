@@ -125,3 +125,4 @@ Ce code implémente un chatbot pour le site Ecofin en utilisant des techniques d
 - https://www.youtube.com/watch?v=H2yBbKNzNK8
 - https://www.youtube.com/watch?v=HCV6nEACQo4
 - https://www.youtube.com/watch?v=ySus5ZS0b94
+- https://openai.com 
