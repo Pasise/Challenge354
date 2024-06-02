@@ -29,7 +29,13 @@ Pour ce projet j'ai utilisé un environnement virtuel Python. Pour l'installer v
 3. Installez les packages nécessaires :
     ```bash
     pipenv install langhchain
-    pip install requests beautifulsoup4 json jq python-dotenv langchain_openai streamlit
+    pip install requests
+    pip install beautifulsoup4
+    pip install json 
+    pip install jq
+    pip install python-dotenv 
+    pip install langchain_openai
+    pip installstreamlit
     ```
 
 ## Téléchargement du code
