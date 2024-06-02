@@ -115,3 +115,13 @@ Ce code implémente un chatbot pour le site Ecofin en utilisant des techniques d
 - Quels sont les articles sur la finance ?
 - Que s'est il passé au TOGO récemment? (ou un autre pays d'Afrique)
 - Quels articles ont été plubliés le 01 Juin? 
+
+
+# Bibliographie
+- https://python.langchain.com/docs/get_started/introduction
+- https://docs.chainlit.io/get-started/overview
+- https://docs.llamaindex.ai/en/stable/
+- https://docs.streamlit.io/en/stable/
+- https://www.youtube.com/watch?v=H2yBbKNzNK8
+- https://www.youtube.com/watch?v=HCV6nEACQo4
+- https://www.youtube.com/watch?v=ySus5ZS0b94
