@@ -39,18 +39,9 @@ Dans votre dossier, vous pouvez cloner le code en utilisant la commande suivante
 git clone https://github.com/Pasise/Challenge354
 
 ```
-### fichier .env
+## Fichier .env
 Pour utiliser le chatbot, vous devez créer un fichier .env dans lequel vous allez mettre votre clé API OpenAI. 
 Vous mettrez la clé dans la variable d'environnement OPENAI_API_KEY du fichier.env 
-
-# Contenu du dossier
-Le dossier contient les fichiers suivants:
-- scraping.py : Ce fichier contient le code pour le web scraping des articles
-- embeddings.py : Ce fichier contient le code pour le stockage des données en vecteur. Le dossier faiss_index2 sera crée et contiendra 2 fichiers : index.faiss et index.pkl qui respectivement contiennent les données en vecteur et les metadata
-- chatbot.py : Ce fichier contient le code pour l'implementation du RAG
-- extractracted_data.json : Ce fichier contient les données extraites des articles
-- Le dossier faiss_index2 : Ce dossier contient les données en vecteur et leurs metadata
-- Le dossier interface : Ce dossier contient les images utilisées pour l'interface graphique
 
 # Contenu du dossier
 
@@ -60,7 +51,7 @@ Le dossier contient les fichiers suivants:
 - **chatbot.py** : Ce fichier contient le code pour l'implémentation du RAG.
 - **extracted_data.json** : Ce fichier contient les données extraites des articles.
 - Le dossier faiss_index2 : Ce dossier contient les données en vecteur et leurs métadonnées.
-- Le dossier interface : Ce dossier contient les images utilisées pour l'interface graphique.
+- L'image robot2.png : Cette image est utilisée pour l'interface graphique
 
 # Exécution du code
 
