@@ -1,6 +1,6 @@
 # Challenge
 
-L'objectif de ce challenge est de récupérer les articles sur le site [Agence Ecofin](https://www.agenceecofin.com/a-la-une/recherche-article?filterTitle=&submit.x=0&submit.y=0&filterTousLesFils=Tous&filterCategories=Sous-rubrique&filterDateFrom=&filterDateTo=&option=com_dmk2articlesfilter&view=articles&filterFrench=French&Itemid=269&userSearch=1&layout=#dmk2articlesfilter_results), les traiter et les stocker. Ensuite de créer une chaîne de traitement pour le RAG (Retrieve, Analyse, Generate) des articles pouvant s'utiliser grâce à une interface pour interagir avec.
+L'objectif de ce challenge est de récupérer les articles sur le site [Agence Ecofin](https://www.agenceecofin.com/a-la-une/recherche-article?filterTitle=&submit.x=0&submit.y=0&filterTousLesFils=Tous&filterCategories=Sous-rubrique&filterDateFrom=&filterDateTo=&option=com_dmk2articlesfilter&view=articles&filterFrench=French&Itemid=269&userSearch=1&layout=#dmk2articlesfilter_results), les traiter et les stocker. Ensuite de créer une chaîne de traitement pour le RAG (Retrieve, Analyse, Generate) des articles pouvant s'utiliser grâce à une interface pour intéragir avec un chatbot.
 
 ## Installation de l'environnement
 
@@ -58,7 +58,7 @@ Vous mettrez la clé dans la variable d'environnement OPENAI_API_KEY du fichier.
 Le dossier contient les fichiers suivants:
 - **scraping.py** : Ce fichier contient le code pour le web scraping des articles.
 - **embeddings.py** : Ce fichier contient le code pour le stockage des données en vecteur. Le dossier **faiss_index2** sera créé et contiendra 2 fichiers : **index.faiss** et **index.pkl** qui respectivement contiennent les données en vecteur et les métadonnées.
-- **chatbot.py** : Ce fichier contient le code pour l'implémentation du RAG.
+- **chatbot.py** : Ce fichier contient le code pour l'implémentation du RAG et le chatbot.
 - **extracted_data.json** : Ce fichier contient les données extraites des articles.
 - Le dossier faiss_index2 : Ce dossier contient les données en vecteur et leurs métadonnées.
 - L'image robot2.png : Cette image est utilisée pour l'interface graphique
