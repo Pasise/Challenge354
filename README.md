@@ -36,7 +36,7 @@ Pour ce projet j'ai utilisé un environnement virtuel Python. Pour l'installer v
 
 Dans votre dossier, vous pouvez cloner le code en utilisant la commande suivante :
 ```bash
-git clone https://github.com/Pasise/Challenge
+git clone https://github.com/Pasise/Challenge354
 
 ```
 ### fichier .env
