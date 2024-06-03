@@ -35,7 +35,7 @@ Pour ce projet j'ai utilisé un environnement virtuel Python. Pour l'installer v
     pip install jq
     pip install python-dotenv 
     pip install langchain_openai
-    pip installstreamlit
+    pip install streamlit
     ```
 
 ## Téléchargement du code
@@ -53,14 +53,13 @@ cd Challenge354/Rendu
 Pour utiliser le chatbot, vous devez créer un fichier .env dans lequel vous allez mettre votre clé API OpenAI. 
 Vous mettrez la clé dans la variable d'environnement OPENAI_API_KEY du fichier.env 
 
-# Contenu du dossier
+# Contenu du dossier Rendu
 
 Le dossier contient les fichiers suivants:
 - **scraping.py** : Ce fichier contient le code pour le web scraping des articles.
 - **embeddings.py** : Ce fichier contient le code pour le stockage des données en vecteur. Le dossier **faiss_index2** sera créé et contiendra 2 fichiers : **index.faiss** et **index.pkl** qui respectivement contiennent les données en vecteur et les métadonnées.
 - **chatbot.py** : Ce fichier contient le code pour l'implémentation du RAG et le chatbot.
 - **extracted_data.json** : Ce fichier contient les données extraites des articles.
-- Le dossier faiss_index2 : Ce dossier contient les données en vecteur et leurs métadonnées.
 - L'image robot2.png : Cette image est utilisée pour l'interface graphique
 
 # Exécution du code
@@ -89,7 +88,7 @@ Afin d'exécuter le code, vous avez 2 possibilités :
 
 # Comment sont stockées les données ? 
 
-- Les données sont extraites de la page htlm du site et stockées dans un fichier JSON.Les 25 premières pages ont été extraites nous données des articles publiées entre le 27/05/2024 et 02/06/2024. Mais en relancant le script scraping.py vous aurez des artcles plus récents. On recupère:
+- Les données sont extraites de la page htlm du site et stockées dans un fichier JSON.Les 25 premières pages ont été extraites nous donnant des articles publiées entre le 27/05/2024 et 02/06/2024. Mais en relancant le script scraping.py vous aurez des artcles plus récents. On recupère:
     - le titre
     - l'url de l'article
     - le contenu de l'article
