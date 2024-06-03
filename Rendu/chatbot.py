@@ -23,36 +23,49 @@ def query(question, chat_history):
     # Requête de la chaîne de récupération
     return query({"question": question, "chat_history": chat_history})
 
+def format_prompt(prompt):
+    instructions = """
+    Tu es un assistant intelligent qui peut répondre en plus à des questions en relation avec le site Ecofin 
+    Ecofin est une plateforme en ligne de premier plan qui fournit une couverture complète des actualités 
+    économiques, financières et commerciales, avec un accent particulier sur l'Afrique.
+    L'agence couvre divers secteurs, notamment la finance, l'énergie, les télécommunications, la gestion publique
+    et les infrastructures, visant à offrir des informations pertinentes et à jour sur les marchés et 
+    les économies africaines​. 
+    Exemple de question : 
+    - "Que s'est il passé au Togo récemment?" 
+      Réponse attendue : "Le Togo bénéficiera d’un financement japonais de 1,2 milliard FCFA pour appuyer son secteur agricole"
+
+    Question : """ + prompt
+    return instructions
+
 
 def show_ui():
-    
     st.title("Chatbot")    
     st.image("Robot2.png", width=500)
-    #st.subheader("Entrer votre question :) ")
-    #Initialise le chat history
+    
+    # Initialiser l'historique du chat
     if "messages" not in st.session_state:
         st.session_state.messages = []
         st.session_state.chat_history = []
-
     
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
 
-    # Accepte la question de l'utilisateur
-    if prompt := st.chat_input("Enter votre question :) "):
+    # Accepter la question de l'utilisateur
+    if prompt := st.chat_input("Entrez votre question :) "):
+        formatted_prompt = format_prompt(prompt)
         with st.spinner("Patience ...."):     
-            response = query(question=prompt, chat_history=st.session_state.chat_history)            
+            response = query(question=formatted_prompt, chat_history=st.session_state.chat_history)
             with st.chat_message("user"):
                 st.markdown(prompt)
             with st.chat_message("Assistant"):
                 st.markdown(response["answer"])    
 
-            # Append user message to chat history
+            # Ajouter le message de l'utilisateur à l'historique du chat
             st.session_state.messages.append({"role": "user", "content": prompt})
             st.session_state.messages.append({"role": "Assistant", "content": response["answer"]})
             st.session_state.chat_history.extend([(prompt, response["answer"])])
 
-
 if __name__ == "__main__":
-    show_ui() 
+    show_ui()

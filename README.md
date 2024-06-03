@@ -114,6 +114,7 @@ Ce code implémente un chatbot pour le site Ecofin en utilisant des techniques d
 - Quels sont les articles sur la finance ?
 - Que s'est il passé au TOGO récemment? (ou un autre pays d'Afrique)
 - Quels articles ont été plubliés le 01 Juin? 
+- Qui es tu ? 
 
 
 # Bibliographie

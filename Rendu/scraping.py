@@ -2,9 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-}
+# HEADERS = {
+#     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+# } #Se faire passer pour un navigateur si necessaire
 
 def obtenir_url(): # Fonction pour obtenir les URL des pages
     urls = []
@@ -16,7 +16,7 @@ def obtenir_url(): # Fonction pour obtenir les URL des pages
     return urls
 
 def parser_page(url): # Fonction pour parser les pages
-    response = requests.get(url, headers=HEADERS)
+    response = requests.get(url)
     soup = BeautifulSoup(response.content, "html.parser")
     blocs = soup.find_all("tr")
     print(f"1")
